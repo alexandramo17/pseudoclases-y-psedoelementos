@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="container">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary navbar bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">pseudo-clases</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="clases.html">pseudo-elementos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active">github</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <section class="container hola">
+        <aside class="row">
+            <h1>pseudo-clases</h1>
+            <div class="col-lg-3 col-xl-3 col-md-6 col-ms-12 col-12 altura1">
+              <h3>:active</h3>
+              Selecciona un elemento cuando el usuario lo activa (por ejemplo, con un clic).
+              <div class="lola">
+                <a href="#">holaaaaa</a>
+              </div>
+            </div>
+            <div class="col-lg-3 col-xl-3 col-md-6 col-ms-12 col-12 altura2">
+              <h3>:any-link</h3>
+              Selecciona los estados :link y :visited de un enlace.
+              <a href="#">hola dieguito</a><br>
+              <a href="#">dieguito que hace</a><br>
+            </div>
+            <div class="col-lg-3 col-xl-3 col-md-6 col-ms-12 col-12 altura3">
+            <h3>::checked</h3>
+            Selecciona un botón de opción o casilla de verificación en el estado que determines.
+            <div>
+              <input type="radio" name="my-input" id="yes">
+              <label for="yes">Yes</label>
+              <input type="radio" name="my-input" id="no">
+              <label for="no">No</label>
+            </div>
+            <div>
+              <input type="checkbox" name="my-checkbox" id="opt-in">
+              <label for="opt-in">Check me!</label>
+            </div>
+            <select name="my-select" id="fruit">
+              <option value="opt1">Apples</option>
+              <option value="opt2">Grapes</option>
+              <option value="opt3">Pears</option>
+            </select>
+            </div>
+            <div class="col-lg-3 col-xl-3 col-md-6 col-ms-12 col-12 altura4">
+              <h3>:current</h3>
+              Selecciona el elemento que se muestra en ese momento, o un ancestro de ese elemento.
+              <video controls preload="metadata">
+                <source src="video.mp4" type="video/mp4" />
+                <source src="video.webm" type="video/webm" />
+                <track
+                  label="English"
+                  kind="subtitles"
+                  srclang="en"
+                  src="subtitles.vtt"
+                  default />
+              </video>
+            </div>
+            <div class="col-lg-3 col-xl-3 col-md-6 col-ms-12 col-12 altura5">
+                <h3>:default</h3>
+                Selecciona uno o más elementos de interfaz de usuario cuyo valor es el predeterminado de entre un conjunto de elementos similares.
+                <fieldset>
+                  <legend>Favorite person of the class</legend>
+                
+                  <input type="radio" name="season" id="spring" value="spring" />
+                  <label for="spring">zcaly</label>
+                
+                  <input type="radio" name="season" id="summer" value="summer" checked />
+                  <label for="summer">liambelt</label>
+                
+                  <input type="radio" name="season" id="fall" value="fall" />
+                  <label for="fall">wings</label>
+                
+                  <input type="radio" name="season" id="winter" value="winter" />
+                  <label for="winter">pirlo</label>
+                </fieldset>
+            </div>
+            <div class="col-lg-3 col-xl-3 col-md-6 col-ms-12 col-12 altura6">
+                <h3>:definido</h3>
+                <simple-custom text="Custom element example text"></simple-custom>
+                  <p class="bebe">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="col-lg-3 col-xl-3 col-md-6 col-ms-12 col-12 altura7">
+                <h3>:dir()</h3>
+                Selecciona un elemento según su direccionalidad (valor del atributo dir de HTML o propiedad direction de CSS).
+                <div dir="rtl">
+                  <span>dhylan</span>
+                  <div dir="ltr">
+                    hola
+                    <div dir="auto">עִבְרִית</div>
+                  </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-xl-3 col-md-6 col-ms-12 col-12 altura8">
+               <h3>:disabled</h3>
+               Selecciona elementos de la interfaz de usuario que están en estado inactivo.
+               <div class="opp">
+               <form action="#">
+                <fieldset id="shipping">
+                  <legend>texto</legend>
+                  <input type="text" placeholder="Name" />
+                  <input type="text" placeholder="Apellido" />
+                  <input type="text" placeholder="Edad" />
+                </fieldset>
+                <br />
+                <fieldset id="billing">
+                  <legend>holaa</legend>
+                  <label for="billing-checkbox">que hace</label>
+                  <input type="checkbox" id="billing-checkbox" checked />
+                  <br />
+                  <input type="text" placeholder="Name" disabled />
+                  <input type="text" placeholder="apellido" disabled />
+                  <input type="text" placeholder="edad" disabled />
+                </fieldset>
+              </form>
+            </div>
+            </div>
+            <div class="col-lg-3 col-xl-3 col-md-6 col-ms-12 col-12 altura9">
+              <h3>:empty</h3>
+              Selecciona un elemento que no tiene elementos hijo, excepto por algún espacio en blanco opcional.
+              <div class="holaaa">
+                    <div class="box clas "></div>
+                    <div class="box clas "> pink.</div>
+                    <div class="box clas "></div>
+                 </div>     
+            </div>
+            <div class="col-lg-3 col-xl-3 col-md-6 col-ms-12 col-12 altura10">
+              <h3>:enabled</h3>
+              Selecciona elementos de la interfaz de usuario que están en estado activo.
+              <div class="ppp">
+              <form action="url_of_form">
+                <label for="FirstField">name:</label>
+                <input type="text" id="FirstField" value="Lorem" /><br />
+              
+                <label for="SecondField">full name:</label>
+                <input type="text" id="SecondField" value="Ipsum" disabled="disabled" /><br/>
+              
+                <input type="button" value="Submit"/>
+              </form>
+            </div>
+            </div>
+            <div class="col-lg-3 col-xl-3 col-md-6 col-ms-12 col-12 altura11">
+              <h3>:first</h3>
+              En Paged Media (en-US), seleccione la primera página.
+              <p>Nombre</p>
+              <p>Apellido.</p>
+              <button>entrar</button>
+            </div>
+            <div class="col-lg-3 col-xl-3 col-md-6 col-ms-12 col-12 altura12">
+              <h3>:first-child</h3>
+              Selecciona el primero entre elementos hermanos.
+              <div class="nene">
+              <div>
+                <p>documento</p>
+                <p>numero de identidad</p>
+              </div>
+              
+              <div>
+                <h2>1034279361</h2>
+                <p>Gracias</p>
+              </div>
+            </div>
+            </div>
+            <div class="col-lg-3 col-xl-3 col-md-6 col-ms-12 col-12 altura13">
+              <h3>:first-of-type</h3>
+              Selecciona el primero entre un tipo determinado de elementos hermanos.
+              <h2>Heading</h2>
+              <p>Paragraph 1</p>
+              <p>Paragraph 2</p>
+            </div>
+            <div class="col-lg-3 col-xl-3 col-md-6 col-ms-12 col-12 altura14">
+              <h3>:focus</h3>
+              Selecciona el elemento que tiene el foco.
+              <input class="red-input" value="Voy a ser de color rojo cuando enfoque."><br>
+              <input class="blue-input" value="Voy a ser de color azul cuando enfoque.">  
+            </div>
+            <div class="col-lg-3 col-xl-3 col-md-6 col-ms-12 col-12 altura15">
+              <h3>:focus-visible</h3>
+              Selecciona el elemento que tiene el foco cuando el foco tiene que estar visible para el usuario.
+              <input value="Default styles"><br>
+                <button>Default styles</button><br>
+                <input class="focus-only" value=":focus only"><br>
+                <button class="focus-only">:focus only</button><br>
+                <input class="focus-visible-only" value=":focus-visible only"><br>
+                <button class="focus-visible-only">:focus-visible only</button>
+            </div>
+            <div class="col-lg-3 col-xl-3 col-md-6 col-ms-12 col-12 altura16">
+              <h3>:focus-within</h3>
+              Selecciona el elemento que tiene el foco y el elemento con un descendiente que tiene el foco.
+              Intenta escribir en este formulario.
+              <div class="tete">
+                <form>
+                  <label for="given_name">Nombre:</label>
+                  <input id="given_name" type="text">
+                  <br>
+                  <label for="family_name">Apellido:</label>
+                  <input id="family_name" type="text">
+                </form>
+              </div>
+            </div>
+            <div class="col-lg-3 col-xl-3 col-md-6 col-ms-12 col-12 altura17">
+              <h3>:fullscreen</h3>
+              La pseudo-clase :fullscreen de CSS representa un elemento que se muestra cuando el navegador está en modo de pantalla completa.
+              <div id="fullscreen">
+                <h1>Demostración :fullscreen</h1>
+                <p>Este texto se pondrá grande y rojo cuando el navegador esté en modo de pantalla completa.</p>
+                <button id="fullscreen-button">Entrar en pantalla completa</button>
+              </div>
+            </div>
+            <div class="col-lg-3 col-xl-3 col-md-6 col-ms-12 col-12 altura18">
+              <h3>:has</h3>
+              La pseudo-class CSS :has() representa un elemento si cualquiera de los selectores, en relación con el :scope (en-US) del elemento dado, 
+              que se pasa como parámetro, coincide con al menos un elemento. La pseudo clase :has() tomo un selector como argumento.
+            </div>
+            <div class="col-lg-3 col-xl-3 col-md-6 col-ms-12 col-12 altura19">
+              <h3>:host-context()</h3>
+              La función de pseudoclase CSS selecciona el host de sombra del DOM de sombra que contiene el CSS que se usa dentro 
+              (por lo que puede seleccionar un elemento personalizado desde dentro de su DOM de sombra), pero solo si el selector 
+              dado como parámetro de la función coincide con el del host de sombra. ancestro(s) en el lugar que ocupa dentro de la 
+              jerarquía DOM.:host-context()
+            </div>
+            <div class="col-lg-3 col-xl-3 col-md-6 col-ms-12 col-12 altura20">
+              <h3>:anfitrión()</h3>
+              La función de pseudoclase CSS selecciona el host de sombra del DOM de sombra que contiene el CSS que se usa dentro 
+              (para que pueda seleccionar un elemento personalizado desde dentro de su DOM de sombra), pero solo si el selector
+               dado como parámetro de la función coincide con el host de sombra .:host()
+            </div>
+            <div class="col-lg-3 col-xl-3 col-md-6 col-ms-12 col-12 altura21">
+             <h3>:flotar</h3>
+             La pseudoclase CSS coincide cuando el usuario interactúa con un elemento con un dispositivo señalador, 
+             pero no necesariamente lo activa. Por lo general, se activa cuando el usuario pasa el cursor sobre un elemento 
+             (puntero del mouse).:hover
+             <div class="gg">
+             <a href="#">Try hovering over this link.</a>
+            </div>
+
+            </div>
+            <div class="col-lg-3 col-xl-3 col-md-6 col-ms-12 col-12 altura22">
+              <h3>:in-range</h3>
+              La pseudoclase CSS representa un elemento cuyo valor actual está dentro de los límites de rango especificados por los atributos y .:in-range <input>minmax
+              <div class="gato">
+              <form action="" id="form1">
+                <ul>
+                  Values between 1 and 10 are valid.
+                  <li>
+                    <input
+                      id="value1"
+                      name="value1"
+                      type="number"
+                      placeholder="1 to 10"
+                      min="1"
+                      max="10"
+                      value="12"
+                      required />
+                    <label for="value1">Your value is </label>
+                  </li>
+                </ul>
+              </form>
+            </div>
+            </div>
+            <div class="col-lg-3 col-xl-3 col-md-6 col-ms-12 col-12 altura24">
+            <h3>:indeterminate</h3>
+            La pseudoclase CSS representa cualquier elemento de formulario cuyo estado sea indeterminado, 
+            como casillas de verificación que tienen su atributo HTML establecido en , botones de opción 
+            que son miembros de un grupo en el que todos los botones de opción están desmarcados y elementos indeterminados.:indeterminate indeterminatetrue<progress>
+              <fieldset>
+                <legend>Checkbox</legend>
+                <div>
+                  <input type="checkbox" id="checkbox" />
+                  <label for="checkbox">This checkbox label starts out lime.</label>
+                </div>
+              </fieldset>
+              
+              <fieldset>
+                <legend>Radio</legend>
+                <div>
+                  <input type="radio" id="radio1" name="radioButton" value="val1" />
+                  <label for="radio1">First radio label starts out lime.</label>
+                </div>
+                <div>
+                  <input type="radio" id="radio2" name="radioButton" value="val2" />
+                  <label for="radio2">Second radio label also starts out lime.</label>
+                </div>
+              </fieldset>
+            </div>
+            <div class="col-lg-3 col-xl-3 col-md-6 col-ms-12 col-12 altura25">
+            <h3>:invalid</h3>
+            La pseudoclase de CSS representa cualquier , u otro elemento cuyo contenido no se pueda validar .:invalid <form><fieldset><input><form><form>
+              <div class="ham">
+              <form>
+                <div class="field">
+                  <label for="url_input">Enter a URL:</label>
+                  <input type="url" id="url_input" />
+                </div>
+                <div class="field">
+                  <label for="email_input">Enter an email address:</label>
+                  <input type="email" id="email_input" required />
+                </div>
+              </form>
+            </div>
+            </div>
+            <div class="col-lg-3 col-xl-3 col-md-6 col-ms-12 col-12 altura26">
+              <h3>:is()</h3>
+              The :is() CSS pseudo-class function takes a selector list as its argument, and selects any element that can be selected by one of 
+              the selectors in that list. This is useful for writing large selectors in a more compact form.
+            </div>
+            <div class="col-lg-3 col-xl-3 col-md-6 col-ms-12 col-12 altura27">
+              <h3>:lang()</h3>
+              <div lang="en">
+                <q>This English quote has a <q>nested</q> quote inside.</q>
+              </div>
+              <div lang="fr">
+                <q>This French quote has a <q>nested</q> quote inside.</q>
+              </div>
+              <div lang="de">
+                <q>This German quote has a <q>nested</q> quote inside.</q>
+              </div>
+            </div>
+            <div class="col-lg-3 col-xl-3 col-md-6 col-ms-12 col-12 altura28">
+              <h3>:last-child</h3>
+              <div>
+                <p>This text isn't selected.</p>
+                <p>This text is selected!</p>
+              </div>
+              <div>
+                <p>This text isn't selected.</p>
+                <h2>This text isn't selected: it's not a `p`.</h2>
+              </div> 
+            </div>
+            <div class="col-lg-3 col-xl-3 col-md-6 col-ms-12 col-12 altura29">
+              <h3>::last-of-type</h3>
+              La pseudo-class :last-of-type de CSS representa el último elemento de su tipo entre un grupo de elementos hermanos.
+              <h2>Título</h2>
+                <p>Párrafo 1</p>
+                <p>Párrafo 2</p>
+            </div>
+        </aside>
+    </section>
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

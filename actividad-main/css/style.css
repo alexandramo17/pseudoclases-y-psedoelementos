@@ -1,0 +1,401 @@
+*{
+    box-sizing: border-box;
+  } 
+body {
+      margin: 0%;
+      padding: 0;
+      background-color: rgb(24, 0, 82);
+  }
+.hola{
+    width: 100%;
+    height: 100vh;
+  }
+  li{
+    font-size: 2vh;
+  }
+  .btn{
+    border-color: aliceblue;
+   color: aliceblue;
+  }
+  h1{
+    color: #e49898;
+    height: 10vh;
+    text-align: center;
+  }
+  h3 {
+    color: azure;
+    text-align: center;
+  }
+  .altura1 {
+    background-color: rgb(164, 82, 241);
+    height: 50vh;
+    font-size: 3vh;
+  }
+  .nene a:active {
+    color: red;
+  }
+  .altura2 {
+    background-color: rgb(200, 176, 219);
+    height: 50vh;
+  }
+  .altura2 a:any-link {
+    border: 1px solid rgb(75, 6, 235);
+    color: rgb(7, 0, 0);
+  }
+  .altura2 a:-webkit-any-link {
+    border: 1px solid rgb(75, 6, 235);
+    color: rgb(7, 0, 0);
+  }
+  .altura3 {
+    background-color: rgb(164, 82, 241);
+    height: 50vh;
+  }
+  input:checked + label {
+  color: rgb(124, 203, 240);
+}
+  input[type="radio"]:checked {
+  box-shadow: 0 0 0 3px rgb(233, 191, 113);
+}
+  input[type="checkbox"]:checked {
+  box-shadow: 0 0 0 3px rgb(137, 235, 124);
+}
+  option:checked {
+  box-shadow: 0 0 0 3px lime;
+  color: red;
+}
+  .altura4 {
+    background-color: rgb(200, 176, 219);
+    height: 50vh;
+  }
+  :current(p, span) {
+  background-color: yellow;
+}
+  .altura5 {
+    background-color: rgb(164, 82, 241);
+    height: 50vh;
+  }
+  .altura5 input:default {
+    box-shadow: 0 0 2px 1px coral;
+  }
+  
+  .altura5 input:default + label {
+    color: coral;
+  }
+  .altura6 {
+    background-color: rgb(200, 176, 219);
+    height: 50vh;
+  }
+  .altura6 .bebe {
+    color: aliceblue;
+    background: rgb(0, 0, 0);
+  }
+  
+  .altura6 .simple-custom {
+    background: rgb(198, 227, 243);
+  }
+  :defined {
+    font-style: italic;
+  }
+  .altura7 {
+    background-color: rgb(164, 82, 241);   
+     height: 50vh;
+  }
+  :dir(ltr) {
+    background-color: rgb(0, 255, 106);
+  }
+  :dir(rtl) {
+    background-color: powderblue;
+  }
+  .altura8 {
+    background-color: rgb(200, 176, 219);
+    height: 50vh;
+  }
+  .opp input[type="text"]:disabled {
+    background: #000000;
+  }
+  .altura9 {
+    background-color: rgb(164, 82, 241);
+    height: 50vh;
+  }
+  .empanada {
+    display: flexbox;
+    height: 1rem;
+    justify-content:center;
+    text-align: center;
+    align-items: center;
+  }
+ .holaaa{
+  display: flex;
+  height: auto;
+  justify-content: center;
+  align-self: center;
+  flex-direction: row;
+ }
+  .clas {
+    display: flex;
+    background: pink;
+    height: 50px;
+    width: 50px;
+    justify-content: center;
+    align-self: center;
+    flex-direction: row;
+  }
+  .box:empty {
+    background: rgb(137, 99, 240);
+  }
+  .altura10 {
+    background-color: rgb(200, 176, 219);
+    height: 50vh;
+  }
+  .ppp input:enabled {
+    color: rgb(34, 187, 141);
+  }
+  
+  input:disabled {
+    color: #aaa;
+  }
+  @page :first {
+    margin-left: 50%;
+    margin-top: 50%;
+  }
+  
+  p {
+    page-break-after: always;
+  }
+  .altura11 {
+    background-color: rgb(164, 82, 241);
+    height: 50vh;
+  }
+  @page :first {
+    margin-left: 50%;
+    margin-top: 50%;
+  }
+  p {
+    page-break-after: always;
+  }
+  .altura12 {
+    background-color: rgb(200, 176, 219);
+    height: 50vh;
+  }
+  .altura12 p:first-child {
+    color: rgb(231, 231, 231);
+    background-color: rgb(11, 9, 109);
+    padding: 5px;
+  }
+  .altura13 {
+    background-color: rgb(164, 82, 241);
+    height: 50vh;
+  }
+  .altura13 p:first-of-type {
+    color: red;
+    font-style: italic;
+  }
+  .altura14 {
+    background-color: rgb(200, 176, 219);
+    height: 50vh;
+  }
+  .red-input:focus {
+    background: yellow;
+    color: red;
+  }
+  
+  .blue-input:focus {
+    background: yellow;
+    color: rgb(127, 166, 211);
+  }
+  .altura15 {
+    background-color: rgb(164, 82, 241);
+    height: 50vh;
+  }
+  input, button {
+    margin: 10px;
+  }
+  
+  .focus-only:focus {
+    outline: 2px solid black;
+  }
+  
+  .focus-visible-only:focus-visible {
+    outline: 4px dashed darkorange;
+  }
+  .altura16 {
+    background-color: rgb(200, 176, 219);
+    height: 50vh;
+  }
+  form {
+    border: 1px solid;
+    color: gray;
+    padding: 4px;
+  }
+  
+  .tete form:focus-within {
+    background: #ff8;
+    color: black;
+  }
+  
+  input {
+    margin: 4px;
+  }
+  .altura17 {
+    background-color: rgb(164, 82, 241);
+    height: 50vh;
+  }
+  #fullscreen:fullscreen {
+    padding: 42px;
+    background-color: pink;
+    border:2px solid #f00;
+    font-size: 200%;
+  }
+  
+  #fullscreen:fullscreen > h1 {
+    color: red;
+  }
+  
+  #fullscreen:fullscreen > p {
+    color: darkred;
+  }
+  
+  #fullscreen:fullscreen > button {
+    display: none;
+  }
+  .altura18 {
+    background-color: rgb(200, 176, 219);
+    height: 50vh;
+  }
+  .altura19 {
+    background-color: rgb(164, 82, 241);
+    height: 50vh;
+  }
+  .altura20 {
+    background-color: rgb(200, 176, 219);
+    height: 50vh;
+  }
+  .altura21 {
+    background-color: rgb(164, 82, 241);
+    height: 50vh;
+  }
+  .gg {
+    background-color: powderblue;
+    transition: background-color 0.5s;
+  }
+  .gg a:hover {
+    background-color: rgb(91, 231, 213);
+  }
+  .altura22 {
+    background-color: rgb(200, 176, 219);
+    height: 50vh;
+  }
+  .gato {
+    list-style: none;
+    margin-bottom: 1em;
+  }
+  
+  input {
+    border: 1px solid black;
+  }
+  
+  input:in-range {
+    background-color: rgba(0, 255, 0, 0.25);
+  }
+  
+  input:out-of-range {
+    background-color: rgba(255, 0, 0, 0.25);
+    border: 2px solid red;
+  }
+  
+  input:in-range + label::after {
+    content: "okay.";
+  }
+  
+  input:out-of-range + label::after {
+    content: "out of range!";
+  }
+  .altura24 {
+    background-color: rgb(164, 82, 241);
+    height: 50vh;
+  }
+  input:indeterminate + label {
+    background: lime;
+  }
+  .altura25 {
+    background-color: rgb(200, 176, 219);
+    height: 50vh;
+  }
+  label {
+    display: block;
+    margin: 1px;
+    padding: 1px;
+  }
+  
+  .field {
+    margin: 1px;
+    padding: 1px;
+  }
+  
+ .ham input:invalid {
+    background-color: #a5ecab;
+  }
+  
+  .ham form:invalid {
+    border: 5px solid #73e7a0;
+  }
+  
+  .ham input:valid {
+    background-color: #5fce5f;
+  }
+  
+  .ham form:valid {
+    border: 5px solid #36a736;
+  }
+  
+  input:required {
+    border-color: #753030;
+    border-width: 3px;
+  }
+  
+  input:required:invalid {
+    border-color: #e49898;
+  }
+  .altura26 {
+    background-color: rgb(164, 82, 241);
+    height: 50vh;
+  }
+  .altura27 {
+    background-color: rgb(200, 176, 219);
+    height: 50vh;
+  }
+  :lang(en) > q {
+    quotes: "\201C""\201D""\2018""\2019";
+  }
+  :lang(fr) > q {
+    quotes: "« " " »";
+  }
+  :lang(de) > q {
+    quotes: "»" "«" "\2039""\203A";
+  }   
+  .altura28 {
+    background-color: rgb(164, 82, 241);
+    height: 50vh;
+  }
+  .altua28 p:last-child {
+    color: rgb(163, 206, 163);
+    background-color: black;
+    padding: 5px;
+  }
+  
+  .altura29 {
+    background-color: rgb(200, 176, 219);
+     height: 50vh;
+  }
+  .altura29 p:last-of-type {
+    color: rgb(55, 75, 192);
+    font-style: italic;
+  }
+  .altura30 {
+    background-color: rgb(164, 82, 241);
+    height: 50vh;
+  }
+  .altura31 {
+    background-color: rgb(200, 176, 219);
+    height: 50vh;
+  }

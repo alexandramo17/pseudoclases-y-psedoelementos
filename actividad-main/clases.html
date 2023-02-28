@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style2.css">
+  </head>
+  <body>
+    <div class="container">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary navbar bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">pseudo-clases</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="clases.html">pseudo-elementos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active">github</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <section class="contenedor hola">
+        <aside class="row">
+            <h1>pseudo-elementos</h1>
+            <div class="col-xl-3 col-md-6 col-ms-12 col-12 altura1">
+              <h3>::after (:after)</h3>
+              <p class="boring-text">Here is some plain old boring text.</p>
+              <p>Here is some normal text that is neither boring nor exciting.</p>
+              <p class="exciting-text">Contributing to MDN is easy and fun.</p>
+            </div>
+            <div class="col-xl-3 col-md-6 col-ms-12 col-12 altura2">
+              <h3>::before (:before)</h3>
+              <q>Some quotes</q>, he said, <q>are better than none</q>.
+            </div>
+            <div class="col-xl-3 col-md-6 col-ms-12 col-12 altura3">
+                <h3>::cue-region</h3>
+                <p>El pseudoelemento CSS coincide con las señales de WebVTT dentro de un elemento seleccionado. 
+                  Esto se puede usar para diseñar subtítulos y otras señales en medios con pistas VTT.::cue-region</p>
+            </div>
+            <div class="col-xl-3 col-md-6 col-ms-12 col-12 altura4">
+                <h3>::botón-selector-de-archivo</h3>
+                <form>
+                  <label for="fileUpload">Upload file</label>
+                  <input type="file" id="fileUpload" />
+                </form>
+            </div>
+            <div class="col-xl-3 col-md-6 col-ms-12 col-12 altura5">
+                <h3>::primera letra</h3>
+                <h2>My heading</h2>
+                  <p>
+                      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                    eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+                    voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita
+                    kasd gubergren, no sea takimata sanctus est.
+                  </p>
+                  <p>
+                    Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie
+                    consequat.
+                  </p>
+            </div>
+            <div class="col-xl-3 col-md-6 col-ms-12 col-12 altura6">
+               <h3>::primera linea</h3>
+               <p>
+                Styles will only be applied to the first line of this paragraph. After that,
+                all text will be styled like normal. See what I mean?
+              </p>
+              
+              <span>
+                The first line of this text will not receive special styling because it is not
+                a block-level element.
+              </span>
+            </div>
+            <div class="col-xl-3 col-md-6 col-ms-12 col-12 altura7">
+                <h3>::marcador</h3>
+                <ul>
+                  <li>Peaches</li>
+                  <li>Apples</li>
+                  <li>Plums</li>
+                </ul>
+            </div>
+            <div class="col-xl-3 col-md-6 col-ms-12 col-12 altura8">
+               <h3>:: marcador de posición</h3>
+               <input placeholder="Default opacity" />
+              <input placeholder="Full opacity" class="force-opaque" />
+            </div>
+        </aside>
+    </section>
+  </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

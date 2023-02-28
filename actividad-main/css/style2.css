@@ -1,0 +1,123 @@
+*{
+    box-sizing: border-box;
+  } 
+body {
+      margin: 0%;
+      padding: 0;
+      background-color: rgb(51, 0, 51);
+  }
+.container{
+    height: 10vh;
+    width: 100%;
+  }
+.hola{
+    width: 100%;
+}
+  li{
+    font-size: 2vh;
+  }
+  .btn{
+    border-color: aliceblue;
+   color: aliceblue;
+  }
+  h1{
+    color: aliceblue;
+    height: 10vh;
+    text-align: center;
+  }
+  h3{
+    text-align: center;
+    color: azure;
+  }
+  .altura1{
+    height: 50vh;
+    background-color:rgb(231, 144, 209) ;
+  }
+  .exciting-text::after {
+    content: " <- EXCITING!";
+    color: green;
+  }
+  
+  .boring-text::after {
+    content: " <- BORING";
+    color: red;
+  }
+  .altura2{
+    height: 50vh;
+    background-color:rgb(117, 84, 235) ;
+  }
+  q::before {
+    content: "«";
+    color: blue;
+  }
+  q::after {
+    content: "»";
+    color: red;
+  }
+  .altura3{
+    height: 50vh;
+    background-color:rgb(231, 144, 209) ;
+  }
+  .altura4{
+    height: 50vh;
+    background-color:rgb(117, 84, 235) ;
+  }
+  input[type="file"]::file-selector-button {
+    border: 2px solid #6c5ce7;
+    padding: 0.2em 0.4em;
+    border-radius: 0.2em;
+    background-color: #a29bfe;
+    transition: 1s;
+  }
+  
+  input[type="file"]::file-selector-button:hover {
+    background-color: #81ecec;
+    border: 2px solid #00cec9;
+  }
+  .altura5{
+    height: 50vh;
+    background-color:rgb(231, 144, 209) ;
+  }
+  p {
+    width: 500px;
+    line-height: 1.5;
+  }
+  
+  h2 + p::first-letter {
+    color: white;
+    background-color: black;
+    border-radius: 2px;
+    box-shadow: 3px 3px 0 red;
+    font-size: 250%;
+    padding: 6px 3px;
+    margin-right: 6px;
+    float: left;
+  }
+  .altura6{
+    height: 50vh;
+    background-color:rgb(117, 84, 235) ;
+  }
+  ::first-line {
+    text-transform: uppercase;
+    margin-left: 20px;
+    text-indent: 20px;
+  }
+  .altura7{
+    height: 50vh;
+    background-color:rgb(231, 144, 209) ;
+  }
+ul li::marker {
+  color: red;
+  font-size: 1.5em;
+}
+.altura8{
+  height: 50vh;
+  background-color:rgb(117, 84, 235) ;
+}
+::placeholder {
+  color: green;
+}
+
+.force-opaque::placeholder {
+  opacity: 1;
+}
